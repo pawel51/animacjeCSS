@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        :root {
+            --banner-time: 20s;
+            --image-count: 7;
+            --resolutionImgX: 1920px;
+            --resolutionIMGY: 1280px;
+            
+        }
+
+        body{
+            background-color: black;
+            height: 100vh;
+            /* min-height: var(--resolutionIMGY); */
+        }
+
+        div {
+            height: 100vh;
+            overflow: hidden;
+        }
+        img {
+            margin: 0;
+            position: absolute;
+            left: 1920px;
+            top: 0;
+            animation: cycle 8s linear infinite;
+            float:left;   
+        }
+        img:nth-child(1){
+            left:0;
+        }
+        
+        
+
+        @keyframes cycle{
+            /* visible */
+            0% {
+
+            }
+
+            /* invisible */
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="img1.jpg" alt="">
+        <img src="img2.jpg" alt="">
+        <img src="img3.jpg" alt="">
+        <img src="img4.jpg" alt="">
+        <img src="img5.jpg" alt="">
+        <img src="img6.jpg" alt="">
+        <img src="img7.jpg" alt="">
+    </div>
+    
+</body>
+
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: rgb(32, 30, 43);
+            animation: sky 5s infinite linear;
+        }
+        .sun {
+            position: fixed;
+            width: 15vw;
+            height: 15vw;
+            border-radius: 50%;
+            background-color: yellow;
+            animation: sun 5s infinite linear;
+        }
+        .grass {
+            position: fixed;
+            height: 30vh;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            background-color: black;
+            animation: grass 5s infinite linear;
+        }
+
+        @keyframes sky {
+            0% {
+                background-color: rgb(32, 30, 43);
+            }
+            20% {
+                background-color: rgb(228, 163, 78);
+            }
+            50% {
+                background-color: rgb(189, 253, 255);
+            }
+            80% {
+                background-color: rgb(228, 163, 78);
+            }
+            100% {
+                background-color: rgb(32, 30, 43);
+            }
+        }
+
+        @keyframes grass {
+            0% {
+                background-color: rgb(23, 34, 23);
+            }
+            20% {
+                background-color: rgb(46, 114, 46);
+            }
+            50% {
+                background-color: greenyellow;
+            }
+            80% {
+                background-color: rgb(46, 114, 46);
+            }
+            100% {
+                background-color: rgb(23, 34, 23);;
+            }
+        }
+
+        @keyframes sun {
+            0% {
+                bottom: 15%;
+                left: 10%;
+                background-color: darkred;
+            }
+
+            50% {
+                bottom:45%;
+                background-color: yellow;
+            }
+
+            100% {
+                bottom: 10%;
+                left: 90%;
+                background-color: darkred;
+            }
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="sun"></div>
+    <div class="grass"></div>
+</body>
+</html>

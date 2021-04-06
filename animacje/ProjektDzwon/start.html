@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Document</title>
+ <script src="https://kit.fontawesome.com/d1616f857a.js" crossorigin="anonymous"></script>
+ <style>
+     .bell {
+         position: fixed;
+         bottom: 20px;
+         right: 20px;
+         width: 80px;
+         height: 80px;
+         color: cadetblue;
+         border: 8px solid cadetblue;
+         border-radius: 50%;
+         font-size: 50px;
+         text-align: center;
+         line-height: 80px;
+         
+     }
+     .bell i {
+        animation: rotate 1s linear infinite;
+        transform-origin: 50% 0;
+     }
+
+     .bell:hover i {
+         color: white;
+         animation-duration: 0.2s;
+     }
+     .bell:hover {
+         background-color: cadetblue;
+     }
+
+     @keyframes rotate{
+        25% {
+            transform: rotateZ(30deg);
+        }
+        50% {
+            transform: rotateZ(0deg);
+        }
+        75% {
+            transform: rotate(-30deg);
+        }
+     }
+
+ </style>
+</head>
+
+<body>
+
+ <div class="bell">
+    <i class="far fa-bell"></i>
+    
+ </div>
+</body>
+
+</html>
